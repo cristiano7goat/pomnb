@@ -1,0 +1,107 @@
+import turtle, time
+
+turtle.tracer(False)
+turtle.hideturtle()
+turtle.shape()
+turtle.width(5)
+turtle.speed(10)
+
+xAsed, yAsed = -100, -100
+
+def koleso(x, y):
+  turtle.goto(x,y)
+  turtle.circle(50)
+  
+while(xAsed<=0):
+
+  turtle.penup()
+  turtle.goto(xAsed , yAsed)
+  turtle.pendown()  
+  koleso(xAsed, yAsed)  
+  turtle.penup()
+  turtle.goto(xAsed+150 , yAsed)
+  turtle.pendown()  
+  koleso(xAsed+150, yAsed)
+  turtle.penup()
+  turtle.goto(xAsed+150,yAsed+50)
+  turtle.pendown()
+  turtle.goto(xAsed, yAsed+50)    
+  turtle.penup()
+  turtle.goto(xAsed,yAsed+50)
+  turtle.pendown()
+  turtle.goto(xAsed+100, yAsed+100)  
+  turtle.goto(xAsed+150, yAsed+50)
+  turtle.goto(xAsed+100, yAsed+180) 
+  turtle.goto(xAsed, yAsed+50)
+    
+  xAsed = xAsed + 1
+  yAsed = yAsed - 1
+
+  turtle.update()
+  time.sleep(0.01)
+  turtle.clear()
+  
+  
+while(xAsed<=200):
+
+  turtle.penup()
+  turtle.goto(xAsed , yAsed)
+  turtle.pendown()  
+  koleso(xAsed, yAsed)  
+  turtle.penup()
+  turtle.goto(xAsed+150 , yAsed)
+  turtle.pendown()  
+  koleso(xAsed+150, yAsed)
+  turtle.penup()
+  turtle.goto(xAsed+150,yAsed+50)
+  turtle.pendown()
+  turtle.goto(xAsed, yAsed+50)    
+  turtle.penup()
+  turtle.goto(xAsed,yAsed+50)
+  turtle.pendown()
+  turtle.goto(xAsed+100, yAsed+100)  
+  turtle.goto(xAsed+150, yAsed+50)
+  turtle.goto(xAsed+100, yAsed+180) 
+  turtle.goto(xAsed, yAsed+50)
+    
+  xAsed = xAsed + 1
+  yAsed = yAsed + 1
+
+  turtle.update()
+  time.sleep(0.01)
+  turtle.clear()
+    
+while(yAsed>=-200):
+
+  turtle.penup()
+  turtle.goto(xAsed , yAsed)
+  turtle.pendown()  
+  koleso(xAsed, yAsed)  
+  turtle.penup()
+  turtle.goto(xAsed+150 , yAsed)
+  turtle.pendown()  
+  koleso(xAsed+150, yAsed)
+  turtle.penup()
+  turtle.goto(xAsed+150,yAsed+50)
+  turtle.pendown()
+  turtle.goto(xAsed, yAsed+50)    
+  turtle.penup()
+  turtle.goto(xAsed,yAsed+50)
+  turtle.pendown()
+  turtle.goto(xAsed+100, yAsed+100)  
+  turtle.goto(xAsed+150, yAsed+50)
+  turtle.goto(xAsed+100, yAsed+180) 
+  turtle.goto(xAsed, yAsed+50)
+    
+  xAsed = xAsed - 1
+  yAsed = yAsed
+
+  turtle.update()
+  time.sleep(0.01)
+  turtle.clear()
+      
+  
+turtle.done()
+  
+  
+  
